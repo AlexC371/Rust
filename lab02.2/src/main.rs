@@ -104,14 +104,11 @@ fn word_count(note: &Note) -> usize {
     let mut nr = 0;
     let mut ok = false;
     for i in note.body.chars() {
-        if i == ' '
-        {
+        if i == ' ' {
             ok = false;
-        }
-        else if ok == false 
-        {
+        } else if ok == false {
             nr += 1;
-            ok= true;
+            ok = true;
         }
     }
     nr
